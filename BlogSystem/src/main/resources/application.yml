@@ -1,0 +1,36 @@
+server:
+  port: 8081
+
+# 数据源配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog_system
+    username: root
+    password: 1234
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    database: 0 # Redis 数据库索引(默认为0)
+    host: localhost # Redis 服务器地址
+    port: 6379 # Redis 服务器连接端口
+#    password: 1234 # Redis 服务器连接密码(默认为空)
+    timeout: 0 # 连接超时时间(毫秒)
+    jedis:
+      pool:
+        max-active: 8 # 连接池最大连接数(使用负值表示没有限制)
+        max-wait: -1 # 连接池最大阻塞等待时间(使用负值表示没有限制)
+        max-idle: 8 # 连接池中的最大空闲连接
+        min-idle: 0 # 连接池中的最小空闲连接
+
+# mybatis-plus 配置
+mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 控制台信息输出
+  global-config:
+    db-config:
+      id-type: auto  # id生成策略为数据库自动
+      table-prefix: tb_  # 表名前缀
+      logic-delete-field: deleted   # 逻辑删除的字段
+      logic-delete-value: 0   # 表示删除的值
+      logic-not-delete-value: 1  # 没有删除的值
+

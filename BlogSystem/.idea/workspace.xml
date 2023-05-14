@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="00d233f0-ff50-4253-bbe5-ad5370c789ef" name="变更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/software/apache-maven-3.6.1" />
+        <option name="showDialogWithAdvancedSettings" value="true" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\software\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="corretto-1.8" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2OTHrzgZ1JWSMJEUKNfROyap0sf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/software/apache-tomcat-8.5.68&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a139b3408b339f017dfbcfc95acccaf4&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.BlogSystemApplication">
+    <configuration name="BlogSystemApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlogSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.cqnussl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.cqnussl" />
+      <option name="MAIN_CLASS_NAME" value="top.cqnussl.BlogSystemApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogSystemApplicationTests.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlogSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.cqnussl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.cqnussl" />
+      <option name="MAIN_CLASS_NAME" value="top.cqnussl.BlogSystemApplicationTests" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlogSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.cqnussl.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.cqnussl.dao" />
+      <option name="MAIN_CLASS_NAME" value="top.cqnussl.dao.DaoTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoTests.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BlogSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.cqnussl.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.cqnussl.dao" />
+      <option name="MAIN_CLASS_NAME" value="top.cqnussl.dao.DaoTests" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="BlogSystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.cqnussl.BlogSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.681" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="7e721494-f175-49f1-8fa0-19fcbdd3eb24" />
+        <option name="HTTP_PORT" value="8080" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50555" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DaoTests.test" />
+        <item itemvalue="JUnit.DaoTests.testSave" />
+        <item itemvalue="JUnit.BlogSystemApplicationTests.testSave" />
+        <item itemvalue="JUnit.BlogSystemApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\a1573\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="00d233f0-ff50-4253-bbe5-ad5370c789ef" name="变更" comment="" />
+      <created>1681577855906</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681577855906</updated>
+      <workItem from="1681577857821" duration="1864000" />
+      <workItem from="1681618796423" duration="7000" />
+      <workItem from="1681663837423" duration="2000" />
+      <workItem from="1681712097668" duration="3530000" />
+      <workItem from="1681721423376" duration="16256000" />
+      <workItem from="1681744785367" duration="3000" />
+      <workItem from="1681821224832" duration="944000" />
+      <workItem from="1681822747603" duration="533000" />
+      <workItem from="1681835386808" duration="2000" />
+      <workItem from="1681836167646" duration="700000" />
+      <workItem from="1681878621247" duration="1333000" />
+      <workItem from="1681885937224" duration="2120000" />
+      <workItem from="1681889363429" duration="24000" />
+      <workItem from="1681889853116" duration="1665000" />
+      <workItem from="1681911456655" duration="13212000" />
+      <workItem from="1681960576743" duration="2617000" />
+      <workItem from="1681964258942" duration="9574000" />
+      <workItem from="1681990166814" duration="6484000" />
+      <workItem from="1682079442827" duration="2960000" />
+      <workItem from="1682085340026" duration="2945000" />
+      <workItem from="1682088744649" duration="2913000" />
+      <workItem from="1682099237013" duration="4477000" />
+      <workItem from="1682136109691" duration="10594000" />
+      <workItem from="1682178537676" duration="6884000" />
+      <workItem from="1682238790127" duration="5485000" />
+      <workItem from="1682248375885" duration="6557000" />
+      <workItem from="1682255867538" duration="5428000" />
+      <workItem from="1682311516038" duration="892000" />
+      <workItem from="1682317233440" duration="3335000" />
+      <workItem from="1682403624165" duration="2014000" />
+      <workItem from="1682412441129" duration="2660000" />
+      <workItem from="1682434985314" duration="7132000" />
+      <workItem from="1682475462616" duration="5264000" />
+      <workItem from="1682490148705" duration="3115000" />
+      <workItem from="1682520040729" duration="3472000" />
+      <workItem from="1682562397257" duration="648000" />
+      <workItem from="1682603963423" duration="686000" />
+      <workItem from="1682661050049" duration="2531000" />
+      <workItem from="1682701028487" duration="714000" />
+      <workItem from="1682702157695" duration="1273000" />
+      <workItem from="1682749339215" duration="1286000" />
+      <workItem from="1682770350472" duration="2470000" />
+      <workItem from="1682840275426" duration="634000" />
+      <workItem from="1682862943710" duration="2240000" />
+      <workItem from="1682889970642" duration="624000" />
+      <workItem from="1682937185412" duration="623000" />
+      <workItem from="1682954307707" duration="1870000" />
+      <workItem from="1683022088278" duration="2611000" />
+      <workItem from="1683103615146" duration="1374000" />
+      <workItem from="1683167125741" duration="4000" />
+      <workItem from="1683171673744" duration="372000" />
+      <workItem from="1683217255284" duration="1168000" />
+      <workItem from="1683340572540" duration="3421000" />
+      <workItem from="1683354466651" duration="880000" />
+      <workItem from="1683389355786" duration="2146000" />
+      <workItem from="1683441802751" duration="781000" />
+      <workItem from="1683518221253" duration="1312000" />
+      <workItem from="1683527052424" duration="1735000" />
+      <workItem from="1683533952058" duration="4261000" />
+      <workItem from="1683609517778" duration="1565000" />
+      <workItem from="1683613022533" duration="6206000" />
+      <workItem from="1683621975960" duration="1473000" />
+      <workItem from="1683630829443" duration="2690000" />
+      <workItem from="1683638586584" duration="644000" />
+      <workItem from="1683685416951" duration="1216000" />
+      <workItem from="1683693003780" duration="663000" />
+      <workItem from="1683699292525" duration="818000" />
+      <workItem from="1683717309499" duration="1267000" />
+      <workItem from="1683771471564" duration="631000" />
+      <workItem from="1683781850276" duration="644000" />
+      <workItem from="1683802781583" duration="1047000" />
+      <workItem from="1683852417398" duration="632000" />
+      <workItem from="1683859808739" duration="1274000" />
+      <workItem from="1683950132748" duration="1067000" />
+      <workItem from="1684041235500" duration="5315000" />
+      <workItem from="1684067736244" duration="3242000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BlogSystem$BlogSystemApplication.ic" NAME="BlogSystemApplication 覆盖结果" MODIFIED="1682098605998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
