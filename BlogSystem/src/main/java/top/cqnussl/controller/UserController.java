@@ -7,7 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.web.bind.annotation.*;
+import top.cqnussl.domain.Blog;
 import top.cqnussl.domain.User;
+import top.cqnussl.service.BlogService;
 import top.cqnussl.service.UserService;
 
 
@@ -15,9 +17,8 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;
 import java.time.Duration;
-import java.util.HashMap;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author shisl
@@ -30,8 +31,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private BlogService blogService;
+
     @Resource
     private RedisTemplate<String,Object> redisTemplate;
+
 
     /**
      * 新增用户
@@ -197,6 +202,57 @@ public class UserController {
         Integer code = Code.DELETE_OK;
         String msg = "注销成功";
         return new Result(code,true,msg);
+    }
+
+
+    /**
+     * 获取用户热榜
+     * @return users
+     * */
+    @GetMapping("/list")
+    public Result listHotList(){
+
+        // 获取所有用户
+        List<User> users = userService.list();
+        List<Map<String, Object>> list = new ArrayList<>();
+        // 遍历所有用户
+        users.stream().forEach(item->{
+            // 查询当前用户的博客列表
+            LambdaQueryWrapper<Blog> lqw = new LambdaQueryWrapper<>();
+            lqw.eq(Blog::getAuthorId,item.getId());
+            List<Blog> blogs = blogService.list(lqw);
+            // 博客数量
+            Integer blogCount = blogs.size();
+            // 热度
+            Integer hot = 0;
+            // 计算热度
+            /*
+             * 发表博客数量    30
+             * 被浏览次数      1
+             * 被点赞次数      5
+             * 被收藏次数      5
+             * */
+            hot += blogCount * 30;
+            for (Blog blog : blogs) {
+                hot += blog.getBrowseCount() * 1;
+                hot += blog.getLikeCount() * 5;
+                hot += blog.getCollectCount() * 5;
+            }
+            // 定义 hashMap 存储数据
+            HashMap<String,Object> user = new HashMap<>();
+            user.put("id",item.getId());
+            user.put("avatar",item.getAvatar());
+            user.put("nickname",item.getNickname());
+            user.put("hot",hot);
+            list.add(user);
+        });
+        // 对集合按 hot 属性值进行降序排序
+        List<Map<String, Object>> subList = list.stream()
+                                                .sorted((o1, o2) -> Integer.compare((int) o2.get("hot"), (int) o1.get("hot")))
+                                                .limit(5).collect(Collectors.toList());
+        Integer code = Code.GET_OK;
+        String msg = "查询用户热榜成功";
+        return new Result(code,subList,msg);
     }
 }
 

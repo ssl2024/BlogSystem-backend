@@ -21,6 +21,7 @@ public class TokenInterceptor extends HandlerInterceptorAdapter {
     private RedisTemplate<String,Object> redisTemplate;
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
+
         // 获取 token
         String token = request.getHeader("token");
         // 从 Redis 中获取 JSON 字符串并反序列化为 User 对象
