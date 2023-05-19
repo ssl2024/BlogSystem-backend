@@ -769,7 +769,7 @@ blog_system|schema||blog_system||UPDATE|G</Grants>
       <CollationName>utf8_general_ci</CollationName>
     </table>
     <column id="234" parent="227" name="id">
-      <AutoIncrement>43</AutoIncrement>
+      <AutoIncrement>50</AutoIncrement>
       <Comment>博客唯一id</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -851,7 +851,7 @@ blog_system|schema||blog_system||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="249" parent="228" name="id">
-      <AutoIncrement>38</AutoIncrement>
+      <AutoIncrement>43</AutoIncrement>
       <Comment>收藏唯一id</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -878,7 +878,7 @@ blog_system|schema||blog_system||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="254" parent="229" name="id">
-      <AutoIncrement>96</AutoIncrement>
+      <AutoIncrement>113</AutoIncrement>
       <Comment>评论唯一id</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -925,7 +925,7 @@ blog_system|schema||blog_system||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="263" parent="230" name="id">
-      <AutoIncrement>157</AutoIncrement>
+      <AutoIncrement>177</AutoIncrement>
       <Comment>关注唯一id</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -952,7 +952,7 @@ blog_system|schema||blog_system||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="268" parent="231" name="id">
-      <AutoIncrement>106</AutoIncrement>
+      <AutoIncrement>121</AutoIncrement>
       <Comment>点赞唯一id</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -1006,7 +1006,7 @@ blog_system|schema||blog_system||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="278" parent="233" name="id">
-      <AutoIncrement>34</AutoIncrement>
+      <AutoIncrement>41</AutoIncrement>
       <Comment>用户id</Comment>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
@@ -1049,7 +1049,7 @@ blog_system|schema||blog_system||UPDATE|G</Grants>
     <column id="285" parent="233" name="avatar">
       <Comment>用户头像</Comment>
       <DasType>varchar(255)|0s</DasType>
-      <DefaultExpression>&apos;https://img2.woyaogexing.com/2021/12/31/f1d34126009d4b8999d342874c33cf5d!400x400.png&apos;</DefaultExpression>
+      <DefaultExpression>&apos;https://img2.woyaogexing.com/2022/03/04/3d146987d275454daceaefbb2c42ff16!400x400.gif&apos;</DefaultExpression>
       <Position>8</Position>
     </column>
     <index id="286" parent="233" name="PRIMARY">

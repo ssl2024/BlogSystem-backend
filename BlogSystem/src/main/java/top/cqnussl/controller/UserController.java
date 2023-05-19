@@ -1,6 +1,7 @@
 package top.cqnussl.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -86,6 +87,10 @@ public class UserController {
     @GetMapping("/{id}")
     public Result getUser(@PathVariable Long id){
         User user = userService.getById(id);
+        // 过滤用户密码
+        if(user!= null){
+            user.setPwd(null);
+        }
         Integer code = user != null ? Code.GET_OK : Code.GET_ERR;
         String msg = user != null ? "查询用户成功" : "查询用户失败，请重试";
         return new Result(code,user,msg);
@@ -155,6 +160,12 @@ public class UserController {
         lqw.in(User::getId,id);
         IPage<User> userPage = new Page<>(currentPage,size);
         userService.page(userPage, lqw);
+        // 过滤用户密码
+        if(userPage != null){
+            userPage.getRecords().forEach(item->{
+                item.setPwd(null);
+            });
+        }
         Integer code = userPage != null ? Code.GET_OK : Code.GET_ERR;
         String msg = userPage != null ? "查询用户列表成功" : "查询用户列表失败，请重试";
         return new Result(code,userPage,msg);
@@ -184,10 +195,44 @@ public class UserController {
      * */
     @GetMapping
     public Result listUser(){
+        // 好像暂时没用
         List<User> users = userService.list();
         Integer code = Code.GET_OK;
         String msg = "查询用户id列表成功";
         return new Result(code,users,msg);
+    }
+
+    /**
+     * 更新用户密码
+     * @param pwd
+     * @param request
+     * @return 布尔值
+     * */
+    @PutMapping("/update")
+    public Result updateUserPwd(HttpServletRequest request,@RequestBody HashMap<String,String> pwd){
+        // 获取用户id
+        Long id = (Long) request.getAttribute("user_id");
+        // 用户旧密码
+        String oldPwd = pwd.get("oldPwd");
+        // 用户新密码
+        String newPwd = pwd.get("newPwd");
+
+        // 判断是否是游客 -- 37
+        if( id == 37){
+            return new Result(Code.UPDATE_ERR,false,"不允许修改游客账户的密码");
+        }
+        // 获取用户信息
+        User user = userService.getById(id);
+
+        // 判断旧密码是否与数据库种密码一致
+        if(user.getPwd().equals(oldPwd)){
+            // 密码一致更新密码
+            user.setPwd(newPwd);
+            return updateUser(user);
+        } else {
+            // 密码不一致
+            return new Result(Code.UPDATE_ERR,false,"原密码错误");
+        }
     }
 
     /**
@@ -211,7 +256,6 @@ public class UserController {
      * */
     @GetMapping("/list")
     public Result listHotList(){
-
         // 获取所有用户
         List<User> users = userService.list();
         List<Map<String, Object>> list = new ArrayList<>();

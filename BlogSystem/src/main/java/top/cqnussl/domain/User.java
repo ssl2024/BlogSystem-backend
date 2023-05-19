@@ -23,7 +23,7 @@ public class User {
     private String nickname;
 
     /*用户密码*/
-    @TableField(select = false)
+//    @TableField(select = false)
     private String pwd;
 
     /*用户手机号*/
